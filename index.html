@@ -8,153 +8,77 @@
   <meta name="keywords" content="best bluetooth earbuds 2025, wireless earbuds, ANC earbuds, AirPods Pro 2 vs Sony WF-1000XM5, Galaxy Buds2 Pro, Jabra Elite 8 Active, Sennheiser Momentum TW4, Beats Studio Buds+, JBL Tour Pro 2, Skullcandy Rail ANC, Soundcore Liberty 4 NC" />
   <meta name="robots" content="index,follow" />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Top 10 Bluetooth Earbuds (2025)" />
-  <meta property="og:description" content="Compare the 10 best Bluetooth earbuds with quick links to Amazon. Reviews, buyer’s guide, and FAQ included." />
-  <meta property="og:type" content="website" />
-
-  <!-- Styles -->
   <style>
-    :root {
-      --bg: #0d0f12;
-      --card: #15181d;
-      --muted: #8a94a6;
-      --text: #eaeef5;
-      --accent: #5aa9ff;
-      --accent-2: #77dd77;
-      --border: #222831;
-      --danger: #ff6b6b;
-      --radius: 14px;
-      --shadow: 0 10px 30px rgba(0,0,0,.35);
-      --maxw: 1100px;
+    :root{
+      --bg:#0d0f12; --card:#15181d; --muted:#8a94a6; --text:#eaeef5;
+      --accent:#5aa9ff; --accent-2:#77dd77; --border:#222831; --danger:#ff6b6b;
+      --radius:14px; --shadow:0 10px 30px rgba(0,0,0,.35); --maxw:1100px;
+      /* NEW: sticky header height for offsets */
+      --navh:64px;
     }
-    * { box-sizing: border-box }
-    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Helvetica, Arial, sans-serif; line-height: 1.6; }
-    a { color: var(--accent); text-decoration: none }
-    a:hover { text-decoration: underline }
-    header {
-      position: sticky; top: 0; z-index: 50;
-      backdrop-filter: saturate(140%) blur(8px);
-      background: rgba(13,15,18,.8);
-      border-bottom: 1px solid var(--border);
-    }
-    .nav {
-      display: flex; align-items: center; justify-content: space-between;
-      max-width: var(--maxw); margin: 0 auto; padding: .9rem 1.1rem;
-    }
-    .nav h1 { font-size: 1.1rem; margin: 0; letter-spacing: .2px }
-    .nav-links a { margin-left: 1rem; font-weight: 600 }
-    main { max-width: var(--maxw); margin: 0 auto; padding: 1.2rem; }
-    .hero {
-      margin: 1rem 0 1.25rem; padding: 1rem 1.1rem;
-      background: linear-gradient(180deg, #0f1319, #0d0f12);
-      border: 1px solid var(--border); border-radius: var(--radius);
-      box-shadow: var(--shadow);
-    }
-    .hero h2 { margin: .2rem 0 .4rem; font-size: 1.5rem }
-    .muted { color: var(--muted) }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Helvetica,Arial,sans-serif;line-height:1.6}
+    a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+    header{position:sticky;top:0;z-index:50;backdrop-filter:saturate(140%) blur(8px);background:rgba(13,15,18,.8);border-bottom:1px solid var(--border)}
+    .nav{display:flex;align-items:center;justify-content:space-between;max-width:var(--maxw);margin:0 auto;padding:.9rem 1.1rem}
+    .nav h1{font-size:1.1rem;margin:0;letter-spacing:.2px}
+    .nav-links a{margin-left:1rem;font-weight:600}
+    main{max-width:var(--maxw);margin:0 auto;padding:1.2rem}
+    .hero{margin:1rem 0 1.25rem;padding:1rem 1.1rem;background:linear-gradient(180deg,#0f1319,#0d0f12);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow)}
+    .hero h2{margin:.2rem 0 .4rem;font-size:1.5rem}
+    .muted{color:var(--muted)}
 
     /* Table */
-    .table-wrap { overflow-x: auto; margin-top: 1.3rem }
-    table { width: 100%; border-collapse: collapse; font-size: .95rem; min-width: 700px; }
-    th, td { border-bottom: 1px solid var(--border); padding: .75rem .55rem; text-align: left; vertical-align: middle }
-    th { background: #12151a; position: sticky; top: 52px; z-index: 1 }
-    tr:hover td { background: rgba(255,255,255,.02) }
-    .rank { font-weight: 700; width: 56px; }
-    .cta-link { font-weight: 700 }
+    .table-wrap{overflow-x:auto;margin-top:1.3rem}
+    table{width:100%;border-collapse:collapse;font-size:.95rem;min-width:700px}
+    th,td{border-bottom:1px solid var(--border);padding:.75rem .55rem;text-align:left;vertical-align:middle}
+    /* FIX: make header sit below sticky nav; add slight elevation and ensure it overlays rows cleanly */
+    thead th{
+      background:#12151a;
+      position:sticky;
+      top:calc(var(--navh) + 8px);
+      z-index:2;
+      box-shadow:0 1px 0 rgba(0,0,0,.35);
+    }
+    tr:hover td{background:rgba(255,255,255,.02)}
+    .rank{font-weight:700;width:56px}
+    .cta-link{font-weight:700}
 
     /* Cards */
-    .grid {
-      display: grid; gap: 1rem;
-      grid-template-columns: repeat(12, 1fr);
-      margin-top: 1.25rem;
-    }
-    .card {
-      grid-column: span 12;
-      background: var(--card); border: 1px solid var(--border);
-      border-radius: var(--radius); box-shadow: var(--shadow);
-      padding: .9rem;
-      display: grid; grid-template-columns: 120px 1fr; gap: 1rem;
-    }
-    .card img {
-      width: 100%; height: auto; border-radius: 10px; border: 1px solid var(--border);
-      background: #0f1216;
-    }
-    .badge { display: inline-block; font-size: .75rem; padding: .22rem .5rem; border-radius: 999px; background: #0f2a18; color: var(--accent-2); border: 1px solid #173b24; margin-right: .4rem }
-    .btn {
-      display: inline-block; margin-top: .65rem; padding: .7rem 1rem; font-weight: 800; letter-spacing: .3px;
-      background: var(--accent); color: #031225; border-radius: 10px; border: none;
-    }
-    .btn:hover { filter: brightness(1.05); text-decoration: none }
-    .pros-cons { display: grid; grid-template-columns: 1fr 1fr; gap: .5rem; margin-top: .3rem }
-    .pc-box { background: #10141a; border: 1px solid var(--border); border-radius: 10px; padding: .5rem .6rem; font-size: .92rem }
-    .pc-box h4 { margin: .2rem 0 .35rem; font-size: .88rem; letter-spacing: .25px }
-    .pc-box ul { margin: 0; padding-left: 1.1rem }
-    .pc-box li { margin: .15rem 0 }
+    .grid{display:grid;gap:1rem;grid-template-columns:repeat(12,1fr);margin-top:1.25rem}
+    .card{grid-column:span 12;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);padding:.9rem;display:grid;grid-template-columns:120px 1fr;gap:1rem}
+    .card img{width:100%;height:auto;border-radius:10px;border:1px solid var(--border);background:#0f1216}
+    .badge{display:inline-block;font-size:.75rem;padding:.22rem .5rem;border-radius:999px;background:#0f2a18;color:var(--accent-2);border:1px solid #173b24;margin-right:.4rem}
+    .btn{display:inline-block;margin-top:.65rem;padding:.7rem 1rem;font-weight:800;letter-spacing:.3px;background:var(--accent);color:#031225;border-radius:10px;border:none}
+    .btn:hover{filter:brightness(1.05);text-decoration:none}
+    .pros-cons{display:grid;grid-template-columns:1fr 1fr;gap:.5rem;margin-top:.3rem}
+    .pc-box{background:#10141a;border:1px solid var(--border);border-radius:10px;padding:.5rem .6rem;font-size:.92rem}
+    .pc-box h4{margin:.2rem 0 .35rem;font-size:.88rem;letter-spacing:.25px}
+    .pc-box ul{margin:0;padding-left:1.1rem}
+    .pc-box li{margin:.15rem 0}
 
-    /* Content sections */
-    section { margin-top: 2rem }
-    h2 { font-size: 1.35rem; margin-bottom: .6rem }
-    h3 { font-size: 1.1rem; margin: .8rem 0 .3rem }
-    .tip { border-left: 3px solid var(--accent); padding: .6rem .8rem; background: #0f1318; border-radius: 8px; color: var(--muted) }
+    /* Anchor offset so in-page links don't hide under sticky nav */
+    section[id]{scroll-margin-top:calc(var(--navh) + 10px)}
 
     /* Footer */
-    footer {
-      margin-top: 2.2rem; padding: 1.2rem; color: var(--muted);
-      border-top: 1px solid var(--border); background: #0c0e12;
-    }
-    .foot-inner { max-width: var(--maxw); margin: 0 auto }
-    .disclosure { font-size: .9rem }
+    footer{margin-top:2.2rem;padding:1.2rem;color:var(--muted);border-top:1px solid var(--border);background:#0c0e12}
+    .foot-inner{max-width:var(--maxw);margin:0 auto}
+    .disclosure{font-size:.9rem}
 
     /* Responsive */
-    @media (max-width: 820px) {
-      .card { grid-template-columns: 92px 1fr; }
-      th, td { font-size: .92rem }
-      .pros-cons { grid-template-columns: 1fr }
-      .nav h1 { font-size: 1rem }
+    @media (max-width:820px){
+      .card{grid-template-columns:92px 1fr}
+      th,td{font-size:.92rem}
+      .pros-cons{grid-template-columns:1fr}
+      .nav h1{font-size:1rem}
+      :root{ --navh: 70px; } /* give a little extra space on smaller screens */
     }
-    @media (max-width: 540px) {
-      .nav-links { display: none }
-      table { min-width: 600px }
+    @media (max-width:540px){
+      .nav-links{display:none}
+      table{min-width:600px}
+      :root{ --navh: 74px; }
     }
   </style>
-
-  <!-- FAQ Schema (JSON-LD) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [{
-      "@type": "Question",
-      "name": "Which Bluetooth earbuds are best for iPhone users?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Apple AirPods Pro (2nd Gen) are a strong fit thanks to deep iOS integration and features like quick pairing."
-      }
-    },{
-      "@type": "Question",
-      "name": "Which earbuds are great for Android and Samsung phones?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Samsung Galaxy Buds2 Pro pair tightly with Samsung devices and support Android features like Fast Pair."
-      }
-    },{
-      "@type": "Question",
-      "name": "How do I choose between ANC models?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Consider fit and comfort first, then compare noise-cancelling strength, ambient modes, call quality, and app controls."
-      }
-    },{
-      "@type": "Question",
-      "name": "Are workout-friendly earbuds different?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Look for a secure fit, sweat/water resistance, and stable connection. Models marketed as 'Active' usually focus on these."
-      }
-    }]
-  }
-  </script>
 </head>
 <body>
   <header>
@@ -194,70 +118,70 @@
               <td class="rank">1</td>
               <td><a href="#airpods-pro-2">Apple AirPods Pro (2nd Gen)</a></td>
               <td>iPhone users, seamless iOS features</td>
-              <td><img src="https://m.media-amazon.com/images/I/61SUj2aKoEL._AC_SL1500_.jpg" alt="Apple AirPods Pro (2nd Gen)" loading="lazy" width="72"></td>
+              <td><img src="https://m.media-amazon.com/images/I/61SUj2aKoEL._AC_SL1500_.jpg" alt="Apple AirPods Pro (2nd Gen)" loading="lazy" width="72" height="72"></td>
               <td><a class="cta-link" href="https://amzn.to/3Jtls0l" target="_blank" rel="nofollow sponsored noopener">Check Price on Amazon</a></td>
             </tr>
             <tr>
               <td class="rank">2</td>
               <td><a href="#galaxy-buds2-pro">Samsung Galaxy Buds2 Pro</a></td>
               <td>Samsung & Android ecosystem</td>
-              <td><img src="https://m.media-amazon.com/images/I/61Qqg+T8nsL._AC_SL1500_.jpg" alt="Samsung Galaxy Buds2 Pro" loading="lazy" width="72"></td>
+              <td><img src="https://m.media-amazon.com/images/I/61Qqg+T8nsL._AC_SL1500_.jpg" alt="Samsung Galaxy Buds2 Pro" loading="lazy" width="72" height="72"></td>
               <td><a class="cta-link" href="https://amzn.to/43nUM7S" target="_blank" rel="nofollow sponsored noopener">Check Price on Amazon</a></td>
             </tr>
             <tr>
               <td class="rank">3</td>
               <td><a href="#sony-wf-1000xm5">Sony WF-1000XM5</a></td>
               <td>Top-tier ANC & customization</td>
-              <td><img src="https://m.media-amazon.com/images/I/61GJAFdM9pL._AC_SL1500_.jpg" alt="Sony WF-1000XM5" loading="lazy" width="72"></td>
+              <td><img src="https://m.media-amazon.com/images/I/61GJAFdM9pL._AC_SL1500_.jpg" alt="Sony WF-1000XM5" loading="lazy" width="72" height="72"></td>
               <td><a class="cta-link" href="https://amzn.to/4qRBkdL" target="_blank" rel="nofollow sponsored noopener">Check Price on Amazon</a></td>
             </tr>
             <tr>
               <td class="rank">4</td>
               <td><a href="#bose-qc-ultra">Bose QuietComfort Ultra Earbuds</a></td>
               <td>Comfort & noise blocking</td>
-              <td><img src="https://m.media-amazon.com/images/I/513LCPDEWKL._AC_SL1500_.jpg" alt="Bose QuietComfort Ultra Earbuds" loading="lazy" width="72"></td>
+              <td><img src="https://m.media-amazon.com/images/I/513LCPDEWKL._AC_SL1500_.jpg" alt="Bose QuietComfort Ultra Earbuds" loading="lazy" width="72" height="72"></td>
               <td><a class="cta-link" href="https://amzn.to/49HBZZ2" target="_blank" rel="nofollow sponsored noopener">Check Price on Amazon</a></td>
             </tr>
             <tr>
               <td class="rank">5</td>
               <td><a href="#jabra-elite-8-active">Jabra Elite 8 Active</a></td>
               <td>Fitness & secure fit</td>
-              <td><img src="https://m.media-amazon.com/images/I/61oxsNpsVWL._AC_SL1500_.jpg" alt="Jabra Elite 8 Active" loading="lazy" width="72"></td>
+              <td><img src="https://m.media-amazon.com/images/I/61oxsNpsVWL._AC_SL1500_.jpg" alt="Jabra Elite 8 Active" loading="lazy" width="72" height="72"></td>
               <td><a class="cta-link" href="https://amzn.to/4oXCliA" target="_blank" rel="nofollow sponsored noopener">Check Price on Amazon</a></td>
             </tr>
             <tr>
               <td class="rank">6</td>
               <td><a href="#sennheiser-mtw4">Sennheiser Momentum True Wireless 4</a></td>
               <td>Rich sound & staging</td>
-              <td><img src="https://m.media-amazon.com/images/I/71dRuwGqffL._AC_SL1500_.jpg" alt="Sennheiser Momentum True Wireless 4" loading="lazy" width="72"></td>
+              <td><img src="https://m.media-amazon.com/images/I/71dRuwGqffL._AC_SL1500_.jpg" alt="Sennheiser Momentum True Wireless 4" loading="lazy" width="72" height="72"></td>
               <td><a class="cta-link" href="https://amzn.to/4p1eXAC" target="_blank" rel="nofollow sponsored noopener">Check Price on Amazon</a></td>
             </tr>
             <tr>
               <td class="rank">7</td>
               <td><a href="#soundcore-liberty-4-nc">Anker Soundcore Liberty Pro 4 NC</a></td>
               <td>Value ANC & app features</td>
-              <td><img src="https://m.media-amazon.com/images/I/51+N0gVci9L._AC_SL1500_.jpg" alt="Anker Soundcore Liberty Pro 4 NC" loading="lazy" width="72"></td>
+              <td><img src="https://m.media-amazon.com/images/I/51+N0gVci9L._AC_SL1500_.jpg" alt="Anker Soundcore Liberty Pro 4 NC" loading="lazy" width="72" height="72"></td>
               <td><a class="cta-link" href="https://amzn.to/43iRLWs" target="_blank" rel="nofollow sponsored noopener">Check Price on Amazon</a></td>
             </tr>
             <tr>
               <td class="rank">8</td>
               <td><a href="#beats-studio-buds-plus">Beats Studio Buds+</a></td>
               <td>Sleek design, everyday use</td>
-              <td><img src="https://m.media-amazon.com/images/I/51aCbrU88ZL._AC_SL1500_.jpg" alt="Beats Studio Buds+" loading="lazy" width="72"></td>
+              <td><img src="https://m.media-amazon.com/images/I/51aCbrU88ZL._AC_SL1500_.jpg" alt="Beats Studio Buds+" loading="lazy" width="72" height="72"></td>
               <td><a class="cta-link" href="https://amzn.to/4oCfCJg" target="_blank" rel="nofollow sponsored noopener">Check Price on Amazon</a></td>
             </tr>
             <tr>
               <td class="rank">9</td>
               <td><a href="#jbl-tour-pro-2">JBL Tour Pro 2</a></td>
               <td>Smart case & controls</td>
-              <td><img src="https://m.media-amazon.com/images/I/71HhyXtkWfL._AC_SL1500_.jpg" alt="JBL Tour Pro 2" loading="lazy" width="72"></td>
+              <td><img src="https://m.media-amazon.com/images/I/71HhyXtkWfL._AC_SL1500_.jpg" alt="JBL Tour Pro 2" loading="lazy" width="72" height="72"></td>
               <td><a class="cta-link" href="https://amzn.to/4oVVXUm" target="_blank" rel="nofollow sponsored noopener">Check Price on Amazon</a></td>
             </tr>
             <tr>
               <td class="rank">10</td>
               <td><a href="#skullcandy-rail-anc">Skullcandy Rail ANC</a></td>
               <td>Budget-friendly ANC</td>
-              <td><img src="https://m.media-amazon.com/images/I/61hpIZbblYL._AC_SL1500_.jpg" alt="Skullcandy Rail ANC" loading="lazy" width="72"></td>
+              <td><img src="https://m.media-amazon.com/images/I/61hpIZbblYL._AC_SL1500_.jpg" alt="Skullcandy Rail ANC" loading="lazy" width="72" height="72"></td>
               <td><a class="cta-link" href="https://amzn.to/4qTFi5u" target="_blank" rel="nofollow sponsored noopener">Check Price on Amazon</a></td>
             </tr>
           </tbody>
@@ -266,14 +190,15 @@
       <p class="tip">Tip: Start with the models that match your phone platform for the best app features and device-level integrations.</p>
     </section>
 
-    <!-- Review Cards -->
+    <!-- Reviews -->
     <section id="reviews">
       <h2>Top 10 — Short Reviews</h2>
       <div class="grid">
+        <!-- Repeat of your review cards (unchanged content) -->
         <!-- 1 -->
         <article id="airpods-pro-2" class="card" aria-label="Apple AirPods Pro (2nd Gen) review card">
           <a href="https://amzn.to/3Jtls0l" target="_blank" rel="nofollow sponsored noopener" aria-label="Open Amazon product page">
-            <img src="https://m.media-amazon.com/images/I/61SUj2aKoEL._AC_SL1500_.jpg" alt="Apple AirPods Pro (2nd Gen)" loading="lazy">
+            <img src="https://m.media-amazon.com/images/I/61SUj2aKoEL._AC_SL1500_.jpg" alt="Apple AirPods Pro (2nd Gen)" loading="lazy" width="120" height="120">
           </a>
           <div>
             <h3>Apple AirPods Pro (2nd Gen)</h3>
@@ -282,18 +207,11 @@
             <div class="pros-cons">
               <div class="pc-box">
                 <h4>Pros</h4>
-                <ul>
-                  <li>Tight iOS integration</li>
-                  <li>Light, comfortable fit</li>
-                  <li>Reliable everyday performance</li>
-                </ul>
+                <ul><li>Tight iOS integration</li><li>Light, comfortable fit</li><li>Reliable everyday performance</li></ul>
               </div>
               <div class="pc-box">
                 <h4>Cons</h4>
-                <ul>
-                  <li>Best features on Apple devices</li>
-                  <li>Single sound signature (limited tuning)</li>
-                </ul>
+                <ul><li>Best features on Apple devices</li><li>Single sound signature (limited tuning)</li></ul>
               </div>
             </div>
             <a class="btn" href="https://amzn.to/3Jtls0l" target="_blank" rel="nofollow sponsored noopener">Check Price on Amazon</a>
@@ -303,7 +221,7 @@
         <!-- 2 -->
         <article id="galaxy-buds2-pro" class="card" aria-label="Samsung Galaxy Buds2 Pro review card">
           <a href="https://amzn.to/43nUM7S" target="_blank" rel="nofollow sponsored noopener">
-            <img src="https://m.media-amazon.com/images/I/61Qqg+T8nsL._AC_SL1500_.jpg" alt="Samsung Galaxy Buds2 Pro" loading="lazy">
+            <img src="https://m.media-amazon.com/images/I/61Qqg+T8nsL._AC_SL1500_.jpg" alt="Samsung Galaxy Buds2 Pro" loading="lazy" width="120" height="120">
           </a>
           <div>
             <h3>Samsung Galaxy Buds2 Pro</h3>
@@ -312,18 +230,11 @@
             <div class="pros-cons">
               <div class="pc-box">
                 <h4>Pros</h4>
-                <ul>
-                  <li>Great Android experience</li>
-                  <li>Comfortable low-profile design</li>
-                  <li>Solid ANC for commute</li>
-                </ul>
+                <ul><li>Great Android experience</li><li>Comfortable low-profile design</li><li>Solid ANC for commute</li></ul>
               </div>
               <div class="pc-box">
                 <h4>Cons</h4>
-                <ul>
-                  <li>Advanced perks skew to Samsung devices</li>
-                  <li>Case scuffs show on glossy finishes</li>
-                </ul>
+                <ul><li>Advanced perks skew to Samsung devices</li><li>Case scuffs show on glossy finishes</li></ul>
               </div>
             </div>
             <a class="btn" href="https://amzn.to/43nUM7S" target="_blank" rel="nofollow sponsored noopener">Check Price on Amazon</a>
@@ -333,7 +244,7 @@
         <!-- 3 -->
         <article id="sony-wf-1000xm5" class="card" aria-label="Sony WF-1000XM5 review card">
           <a href="https://amzn.to/4qRBkdL" target="_blank" rel="nofollow sponsored noopener">
-            <img src="https://m.media-amazon.com/images/I/61GJAFdM9pL._AC_SL1500_.jpg" alt="Sony WF-1000XM5" loading="lazy">
+            <img src="https://m.media-amazon.com/images/I/61GJAFdM9pL._AC_SL1500_.jpg" alt="Sony WF-1000XM5" loading="lazy" width="120" height="120">
           </a>
           <div>
             <h3>Sony WF-1000XM5</h3>
@@ -342,18 +253,11 @@
             <div class="pros-cons">
               <div class="pc-box">
                 <h4>Pros</h4>
-                <ul>
-                  <li>Top-tier ANC performance</li>
-                  <li>Deep app customization</li>
-                  <li>Comfortable for longer sessions</li>
-                </ul>
+                <ul><li>Top-tier ANC performance</li><li>Deep app customization</li><li>Comfortable for longer sessions</li></ul>
               </div>
               <div class="pc-box">
                 <h4>Cons</h4>
-                <ul>
-                  <li>Premium price bracket</li>
-                  <li>Learning curve for all features</li>
-                </ul>
+                <ul><li>Premium price bracket</li><li>Learning curve for all features</li></ul>
               </div>
             </div>
             <a class="btn" href="https://amzn.to/4qRBkdL" target="_blank" rel="nofollow sponsored noopener">Check Price on Amazon</a>
@@ -363,7 +267,7 @@
         <!-- 4 -->
         <article id="bose-qc-ultra" class="card" aria-label="Bose QuietComfort Ultra Earbuds review card">
           <a href="https://amzn.to/49HBZZ2" target="_blank" rel="nofollow sponsored noopener">
-            <img src="https://m.media-amazon.com/images/I/513LCPDEWKL._AC_SL1500_.jpg" alt="Bose QuietComfort Ultra Earbuds" loading="lazy">
+            <img src="https://m.media-amazon.com/images/I/513LCPDEWKL._AC_SL1500_.jpg" alt="Bose QuietComfort Ultra Earbuds" loading="lazy" width="120" height="120">
           </a>
           <div>
             <h3>Bose QuietComfort Ultra Earbuds</h3>
@@ -372,18 +276,11 @@
             <div class="pros-cons">
               <div class="pc-box">
                 <h4>Pros</h4>
-                <ul>
-                  <li>Excellent passive isolation</li>
-                  <li>Comfort-first design</li>
-                  <li>Calm, balanced sound</li>
-                </ul>
+                <ul><li>Excellent passive isolation</li><li>Comfort-first design</li><li>Calm, balanced sound</li></ul>
               </div>
               <div class="pc-box">
                 <h4>Cons</h4>
-                <ul>
-                  <li>Case is a bit larger</li>
-                  <li>App features are straightforward</li>
-                </ul>
+                <ul><li>Case is a bit larger</li><li>App features are straightforward</li></ul>
               </div>
             </div>
             <a class="btn" href="https://amzn.to/49HBZZ2" target="_blank" rel="nofollow sponsored noopener">Check Price on Amazon</a>
@@ -393,7 +290,7 @@
         <!-- 5 -->
         <article id="jabra-elite-8-active" class="card" aria-label="Jabra Elite 8 Active review card">
           <a href="https://amzn.to/4oXCliA" target="_blank" rel="nofollow sponsored noopener">
-            <img src="https://m.media-amazon.com/images/I/61oxsNpsVWL._AC_SL1500_.jpg" alt="Jabra Elite 8 Active" loading="lazy">
+            <img src="https://m.media-amazon.com/images/I/61oxsNpsVWL._AC_SL1500_.jpg" alt="Jabra Elite 8 Active" loading="lazy" width="120" height="120">
           </a>
           <div>
             <h3>Jabra Elite 8 Active</h3>
@@ -402,18 +299,11 @@
             <div class="pros-cons">
               <div class="pc-box">
                 <h4>Pros</h4>
-                <ul>
-                  <li>Grip-oriented finish</li>
-                  <li>Stable connection during movement</li>
-                  <li>Commute-friendly ANC</li>
-                </ul>
+                <ul><li>Grip-oriented finish</li><li>Stable connection during movement</li><li>Commute-friendly ANC</li></ul>
               </div>
               <div class="pc-box">
                 <h4>Cons</h4>
-                <ul>
-                  <li>Fit may feel snug for small ears</li>
-                  <li>Sound is lively vs. reference-neutral</li>
-                </ul>
+                <ul><li>Fit may feel snug for small ears</li><li>Sound is lively vs. reference-neutral</li></ul>
               </div>
             </div>
             <a class="btn" href="https://amzn.to/4oXCliA" target="_blank" rel="nofollow sponsored noopener">Check Price on Amazon</a>
@@ -423,7 +313,7 @@
         <!-- 6 -->
         <article id="sennheiser-mtw4" class="card" aria-label="Sennheiser Momentum True Wireless 4 review card">
           <a href="https://amzn.to/4p1eXAC" target="_blank" rel="nofollow sponsored noopener">
-            <img src="https://m.media-amazon.com/images/I/71dRuwGqffL._AC_SL1500_.jpg" alt="Sennheiser Momentum True Wireless 4" loading="lazy">
+            <img src="https://m.media-amazon.com/images/I/71dRuwGqffL._AC_SL1500_.jpg" alt="Sennheiser Momentum True Wireless 4" loading="lazy" width="120" height="120">
           </a>
           <div>
             <h3>Sennheiser Momentum True Wireless 4</h3>
@@ -432,18 +322,11 @@
             <div class="pros-cons">
               <div class="pc-box">
                 <h4>Pros</h4>
-                <ul>
-                  <li>Engaging, detailed tuning</li>
-                  <li>Solid build & case</li>
-                  <li>Capable app EQ</li>
-                </ul>
+                <ul><li>Engaging, detailed tuning</li><li>Solid build & case</li><li>Capable app EQ</li></ul>
               </div>
               <div class="pc-box">
                 <h4>Cons</h4>
-                <ul>
-                  <li>Fit can be fuller in ear</li>
-                  <li>Price sits premium</li>
-                </ul>
+                <ul><li>Fit can be fuller in ear</li><li>Price sits premium</li></ul>
               </div>
             </div>
             <a class="btn" href="https://amzn.to/4p1eXAC" target="_blank" rel="nofollow sponsored noopener">Check Price on Amazon</a>
@@ -453,7 +336,7 @@
         <!-- 7 -->
         <article id="soundcore-liberty-4-nc" class="card" aria-label="Anker Soundcore Liberty Pro 4 NC review card">
           <a href="https://amzn.to/43iRLWs" target="_blank" rel="nofollow sponsored noopener">
-            <img src="https://m.media-amazon.com/images/I/51+N0gVci9L._AC_SL1500_.jpg" alt="Anker Soundcore Liberty Pro 4 NC" loading="lazy">
+            <img src="https://m.media-amazon.com/images/I/51+N0gVci9L._AC_SL1500_.jpg" alt="Anker Soundcore Liberty Pro 4 NC" loading="lazy" width="120" height="120">
           </a>
           <div>
             <h3>Anker Soundcore Liberty Pro 4 NC</h3>
@@ -462,18 +345,11 @@
             <div class="pros-cons">
               <div class="pc-box">
                 <h4>Pros</h4>
-                <ul>
-                  <li>Strong value proposition</li>
-                  <li>App offers many toggles</li>
-                  <li>Comfortable daily wear</li>
-                </ul>
+                <ul><li>Strong value proposition</li><li>App offers many toggles</li><li>Comfortable daily wear</li></ul>
               </div>
               <div class="pc-box">
                 <h4>Cons</h4>
-                <ul>
-                  <li>Case finish marks over time</li>
-                  <li>ANC not as strong as top tier</li>
-                </ul>
+                <ul><li>Case finish marks over time</li><li>ANC not as strong as top tier</li></ul>
               </div>
             </div>
             <a class="btn" href="https://amzn.to/43iRLWs" target="_blank" rel="nofollow sponsored noopener">Check Price on Amazon</a>
@@ -483,7 +359,7 @@
         <!-- 8 -->
         <article id="beats-studio-buds-plus" class="card" aria-label="Beats Studio Buds+ review card">
           <a href="https://amzn.to/4oCfCJg" target="_blank" rel="nofollow sponsored noopener">
-            <img src="https://m.media-amazon.com/images/I/51aCbrU88ZL._AC_SL1500_.jpg" alt="Beats Studio Buds+" loading="lazy">
+            <img src="https://m.media-amazon.com/images/I/51aCbrU88ZL._AC_SL1500_.jpg" alt="Beats Studio Buds+" loading="lazy" width="120" height="120">
           </a>
           <div>
             <h3>Beats Studio Buds+</h3>
@@ -492,18 +368,11 @@
             <div class="pros-cons">
               <div class="pc-box">
                 <h4>Pros</h4>
-                <ul>
-                  <li>Sleek, compact case</li>
-                  <li>Simple everyday UX</li>
-                  <li>Good comfort for most ears</li>
-                </ul>
+                <ul><li>Sleek, compact case</li><li>Simple everyday UX</li><li>Good comfort for most ears</li></ul>
               </div>
               <div class="pc-box">
                 <h4>Cons</h4>
-                <ul>
-                  <li>Fewer deep-tune options</li>
-                  <li>ANC is competent, not class-leading</li>
-                </ul>
+                <ul><li>Fewer deep-tune options</li><li>ANC is competent, not class-leading</li></ul>
               </div>
             </div>
             <a class="btn" href="https://amzn.to/4oCfCJg" target="_blank" rel="nofollow sponsored noopener">Check Price on Amazon</a>
@@ -513,7 +382,7 @@
         <!-- 9 -->
         <article id="jbl-tour-pro-2" class="card" aria-label="JBL Tour Pro 2 review card">
           <a href="https://amzn.to/4oVVXUm" target="_blank" rel="nofollow sponsored noopener">
-            <img src="https://m.media-amazon.com/images/I/71HhyXtkWfL._AC_SL1500_.jpg" alt="JBL Tour Pro 2" loading="lazy">
+            <img src="https://m.media-amazon.com/images/I/71HhyXtkWfL._AC_SL1500_.jpg" alt="JBL Tour Pro 2" loading="lazy" width="120" height="120">
           </a>
           <div>
             <h3>JBL Tour Pro 2</h3>
@@ -522,18 +391,11 @@
             <div class="pros-cons">
               <div class="pc-box">
                 <h4>Pros</h4>
-                <ul>
-                  <li>Novel smart-case features</li>
-                  <li>Fun, energetic sound</li>
-                  <li>Solid call handling</li>
-                </ul>
+                <ul><li>Novel smart-case features</li><li>Fun, energetic sound</li><li>Solid call handling</li></ul>
               </div>
               <div class="pc-box">
                 <h4>Cons</h4>
-                <ul>
-                  <li>Case can feel bulky</li>
-                  <li>Features vary by firmware/app</li>
-                </ul>
+                <ul><li>Case can feel bulky</li><li>Features vary by firmware/app</li></ul>
               </div>
             </div>
             <a class="btn" href="https://amzn.to/4oVVXUm" target="_blank" rel="nofollow sponsored noopener">Check Price on Amazon</a>
@@ -543,7 +405,7 @@
         <!-- 10 -->
         <article id="skullcandy-rail-anc" class="card" aria-label="Skullcandy Rail ANC review card">
           <a href="https://amzn.to/4qTFi5u" target="_blank" rel="nofollow sponsored noopener">
-            <img src="https://m.media-amazon.com/images/I/61hpIZbblYL._AC_SL1500_.jpg" alt="Skullcandy Rail ANC" loading="lazy">
+            <img src="https://m.media-amazon.com/images/I/61hpIZbblYL._AC_SL1500_.jpg" alt="Skullcandy Rail ANC" loading="lazy" width="120" height="120">
           </a>
           <div>
             <h3>Skullcandy Rail ANC</h3>
@@ -552,18 +414,11 @@
             <div class="pros-cons">
               <div class="pc-box">
                 <h4>Pros</h4>
-                <ul>
-                  <li>Friendly pricing</li>
-                  <li>Easy to use</li>
-                  <li>Lightweight comfort</li>
-                </ul>
+                <ul><li>Friendly pricing</li><li>Easy to use</li><li>Lightweight comfort</li></ul>
               </div>
               <div class="pc-box">
                 <h4>Cons</h4>
-                <ul>
-                  <li>Materials feel basic</li>
-                  <li>ANC is serviceable</li>
-                </ul>
+                <ul><li>Materials feel basic</li><li>ANC is serviceable</li></ul>
               </div>
             </div>
             <a class="btn" href="https://amzn.to/4qTFi5u" target="_blank" rel="nofollow sponsored noopener">Check Price on Amazon</a>
@@ -572,30 +427,23 @@
       </div>
     </section>
 
-    <!-- Buyer's Guide -->
+    <!-- Buyer’s Guide -->
     <section id="guide">
       <h2>Buyer’s Guide: How to Choose the Right Bluetooth Earbuds</h2>
       <h3>1) Platform & App Features</h3>
       <p>If you’re on iPhone, Apple-centric models integrate best with iOS. Android users should consider earbuds with solid Android Fast Pair and full-featured apps.</p>
-
       <h3>2) Fit & Comfort First</h3>
       <p>Earbud shape and tip size matter more than spec sheets. Try multiple ear tip sizes and note how the nozzle angle sits in your ear. A comfortable, stable seal improves both sound and noise isolation.</p>
-
       <h3>3) Noise Control: ANC vs. Isolation</h3>
       <p>Active Noise Cancelling (ANC) is great for steady noise (trains, planes). Passive isolation—the physical seal—matters just as much. If you want awareness outside, look for transparency/ambient modes.</p>
-
       <h3>4) Sound Signature & Tuning</h3>
       <p>Most earbuds aim for an energetic “V-shape” (more bass/treble). If you prefer neutral or vocal-forward, choose models with an app EQ to adjust the sound to taste.</p>
-
       <h3>5) Battery & Case</h3>
       <p>Check the total hours (buds + case) and quick-charge claims. Wireless charging is a nice quality-of-life perk, as are robust hinges and a pocketable case.</p>
-
       <h3>6) Calls & Mics</h3>
       <p>If you take calls in noisy places, favor models with beamforming mics, wind reduction, and reliable background filtering.</p>
-
       <h3>7) Durability & Exercise</h3>
       <p>For workouts, prioritize a secure fit, sweat resistance, and stable connectivity. Rugged lines often include grippy coatings and stronger seals.</p>
-
       <div class="tip">Bottom line: pick for comfort first, verify the features you’ll actually use (ANC, transparency, multipoint, wireless charging), then choose the sound profile you enjoy.</div>
     </section>
 
@@ -604,13 +452,10 @@
       <h2>FAQ</h2>
       <h3>Are these earbuds good for phone calls?</h3>
       <p>Yes—look for models with beamforming or multi-mic arrays and noise reduction. Environmental noise can still affect clarity, but the top models handle calls well in typical conditions.</p>
-
       <h3>Will ANC block all noise?</h3>
       <p>No. ANC works best on steady, low-frequency sounds. A good passive seal plus ANC is the winning combo for overall quiet.</p>
-
       <h3>Do I need a specific model for my phone?</h3>
       <p>No, most Bluetooth earbuds work across platforms. But you’ll get the smoothest experience (and full features) when the brand matches your ecosystem.</p>
-
       <h3>How should I clean and maintain earbuds?</h3>
       <p>Gently wipe tips and nozzles, remove debris with a soft brush, and let everything dry fully before charging. Avoid harsh liquids around the drivers and case contacts.</p>
     </section>
@@ -624,5 +469,3 @@
   </footer>
 </body>
 </html>
-
-
